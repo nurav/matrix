@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_action_overflow"
+        android:id="@+id/overflow"
+        android:title="Menu"
+        app:showAsAction="always">
+        <menu>
+            <item android:title="Add to Favorite"
+                android:id="@+id/fav"
+                app:showAsAction="ifRoom"
+                />
+            <item android:title="Share Event"
+                android:id="@+id/shr"
+                app:showAsAction="ifRoom"
+                />
+        </menu>
+
+    </item>
+
+</menu>

@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity" >
+    <item android:icon="@drawable/ic_action_overflow"
+        android:title="Menu"
+
+        app:showAsAction="always">
+        <menu>
+            <item android:id="@+id/app_share"
+                android:title="Share App"
+                />
+        </menu>
+
+    </item>
+
+</menu>

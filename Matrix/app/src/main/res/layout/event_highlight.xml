@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="wrap_content"
+    android:layoutMode="clipBounds"
+    android:padding="3dp"
+    android:background="#ffe6e6e6">
+
+    <com.spit.matrix.SquareImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/highlight_img"
+        android:src="@color/material_blue"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Event Name"
+        android:id="@+id/highlight_text"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/White"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        android:layout_alignBottom="@+id/highlight_img"
+        android:background="@color/transparent_black_percent_50"
+        android:padding="5dp"
+        android:gravity="center" />
+</RelativeLayout>

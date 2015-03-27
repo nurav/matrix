@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffe6e6e6">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <view
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    class="com.spit.matrix.SquareImageView"
+                    android:id="@+id/event_detail_img"
+                    android:src="@color/material_red_400" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/event_detail_img"
+                    android:background="@color/transparent_black_percent_50">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/event_detail_name"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Event Name"
+                            android:textSize="28dp"
+                            android:textColor="@color/White"
+                            android:padding="10dp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/img_remind"
+                            android:src="@drawable/ic_action_new_event"
+                            android:padding="5dp"
+                            android:baselineAlignBottom="false" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:id="@+id/linearLayout">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Venue:"
+                                android:id="@+id/textView5"
+                                android:paddingLeft="10dp"
+                                android:textColor="@color/White"
+                                android:textSize="16dp"
+                                android:layout_gravity="left"
+                                android:paddingBottom="3dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Lab 606"
+                                android:id="@+id/event_detail_venue"
+                                android:paddingLeft="10dp"
+                                android:textSize="16dp"
+                                android:textColor="@color/White"
+                                android:layout_gravity="left"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:paddingBottom="10dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="26-27 Sept '14"
+                                android:id="@+id/event_detail_date"
+                                android:paddingRight="10dp"
+                                android:layout_gravity="right"
+                                android:textColor="@color/White"
+                                android:textSize="16dp"
+                                android:paddingBottom="3dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="3:00PM"
+                                android:id="@+id/event_detail_time"
+                                android:paddingRight="10dp"
+                                android:layout_gravity="right"
+                                android:textSize="16dp"
+                                android:textColor="@color/White"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="Description"
+                    android:id="@+id/event_detail_desc"
+                    android:padding="10dp"
+                    android:background="@color/White"
+                    android:textColor="@color/Black"
+                    android:textSize="16dp" />
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
